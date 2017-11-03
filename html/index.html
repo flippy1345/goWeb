@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>goWeb</title>
+    <link rel="stylesheet" type="text/css" href="resources/standard.css">
+    <link rel="stylesheet" type="text/css" href="resources/button.css">
+</head>
+<body>
+<div class="background">
+    <div class="centering">
+        <form method="POST" action="/res">
+            <fieldset>
+                <legend><h2>&nbsp goWeb square root &nbsp</h2></legend>
+                <div style="padding-bottom: 1em">
+                    <input type="number" name="formNumber">
+                    <input class="button blue" type="submit" value="Sqrt">
+                </div>
+                <label>{{.Massage}}{{.Result}}</label>
+            </fieldset>
+        </form>
+    </div>
+</div>
+</body>
+</html>
