@@ -26,7 +26,7 @@ func calc_handler(w http.ResponseWriter, r *http.Request) {
 	}
 	inputValue := r.FormValue("formNumber")
 	number, _ := strconv.ParseInt(inputValue, 10, 0)
-	temp.Execute(w, SqrRes{"√" + inputValue + " = ", Round(math.Sqrt(float64(number)), .5, 2)})
+	temp.Execute(w, SqrRes{"√" + inputValue + " = ", Round(math.Sqrt(float64(number)), .5, 3)})
 }
 
 func index_handler(w http.ResponseWriter, r *http.Request) {
